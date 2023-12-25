@@ -1,0 +1,97 @@
+@use "../utils/" as u;
+
+footer {
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+
+    h3 {
+        @include u.laptop-style {
+            font-size: 15px;
+        }
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+        justify-content: space-between;
+
+        .footer_left {
+            display: flex;
+            align-items: center;
+            gap: 55px;
+
+            @include u.phone-style {
+                gap: 15px;
+            }
+
+            .weappept {
+                width: 375px;
+
+                @include u.laptop-style {
+                    width: 300px;
+                }
+
+                @include u.phone-landscape-style {
+                    width: 280px;
+                }
+
+                @include u.phone-style {
+                    width: 195px;
+                }
+            }
+
+            @include u.tablet-style {
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        .footer_right {
+            display: flex;
+            gap: 45px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                li {
+                    a {
+                        font-size: 14px;
+                        color: var(--footer-link-color);
+                        width: 100%;
+
+                        @include u.laptop-style {
+                            font-size: 13px;
+                        }
+                        &:hover {
+                            color: var(--selected-color);
+                        }
+                    }
+
+                    .br {
+                        display: block;
+                        margin-top: 5px;
+                    }
+                }
+
+                &:first-child,
+                &:nth-child(2) {
+                    @include u.laptop-style {
+                        display: none;
+                    }
+                }
+
+                &:last-child li {
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+
+            @include u.tablet-style {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project detailes</title>
+  <link rel="stylesheet" href="./dist/project_details.css" />
+  <script src="https://kit.fontawesome.com/1475497d52.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="navbar_container container">
+        <div class="navbar_left">
+          <div class="logo_wrapper">
+            <a href="#"><img src="./public/images/menu_day.png" alt="menu" class="menu " id="menu" />
+            </a>
+            <a href="#"><img src="./public/images/logo_day.png" alt="logo" class="logo" id="logo" /></a>
+          </div>
+          <ul class="" id="menu-list">
+            <a href="#" class="close" id="close">X</a>
+            <li><a href="./index.html" class="active_page">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar_right">
+          <a href="" id="theme">
+            <img src="./public/images/day.png" alt="mode" id="mode" />
+          </a>
+          <!-- <a href="#">Signup / Login</a> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <main>
+    <div class="container main-container main" id="Projects_container">
+      <a href="./projects.html" class="back_mobi"><img src="./public/images/arrow-left.png" alt=""> Back</a>
+      <div class="main_left">
+        <div class="content">
+          <a class="back_btn" href="./projects.html"><img src="./public/images/arrow-left.png" alt=""> Back</a>
+          <h2 class="h3">Overview</h2>
+          <p>
+            ClanTube is a web application that aims to provide users with a distraction-free learning experience. It
+            allows users to create personalized playlists of educational YouTube content. With ClanTube, users can add
+            playlists from YouTube using either the playlist ID or URL. They can also bookmark their favorite playlists,
+            take notes, and access video descriptions - all within a clean and user-friendly interface. This project
+            utilizes the YouTube Data API to seamlessly integrate YouTube video data and enhance the learning
+            experience.
+          </p>
+          <h2 class="h3">Functional Requirements:</h2>
+          <ol>
+            <li><span class="hl">Adding Playlists:</span> Users can add new playlists by providing a valid YouTube playlist URL or playlist ID.
+              Display added playlists in the user's playlist collection.</li>
+            <li><span class="hl">Deleting Playlists:</span>  Users can delete playlists from their collection.</li>
+            <li><span class="hl">Adding Playlist to Favorites:</span> Users can remove playlists from their favorites.</li>
+            <li><span class="hl">Automatic Addition to "Recently Watched" Playlist::</span> Playlists that users watch are automatically added to the "Recently Watched" playlist.</li>
+            <li><span class="hl">Note-Taking:</span> Users can take notes while watching a video.
+              Edit and delete notes for a personalized learning experience.</li>
+          </ol>
+          <h2 class="h3">State Management Redux Toolkit:</h2>
+          <ol>
+            <li><span class="hl">Playlists Slice:</span> Asynchronous actions for adding, deleting, adding to favorites, and removing from favorites.</li>
+            <li><span class="hl">Recent Playlists Slice:</span>  Actions for adding to the "Recently Watched" playlist.</li>
+            <li><span class="hl">Notes Slice:</span> Actions for adding, updating, and deleting notes.</li>
+          </ol>
+
+          <h2 class="h3">Technologies Used:</h2>
+          <ol>
+            <li><span class="hl">React.js:</span> Foundation for building dynamic and interactive user interfaces with reusable components. </li>
+            <li><span class="hl">Redux Toolkit:</span> Efficient state management for playlists, favorites, notes, and critical application data.</li>
+            <li><span class="hl">YouTube Data API:</span> Seamless integration to search for videos, retrieve details, and organize playlists.</li>
+            <li><span class="hl">react-rte (Rich Text Editor):</span>
+              Enhances note-taking functionality with rich text formatting.
+            </li>
+          </ol>
+          <h2 class="h3">Challenges Overcome:</h2>
+          <ol>
+            <li><span class="hl">Redux Toolkit Implementation:</span> Successful implementation of Redux Toolkit for effective state management.
+            </li>
+            <li><span class="hl">react-rte Implementation:</span> Successful incorporation and optimization of the react-rte library for enhanced note-taking.</li>
+          </ol>
+
+
+        </div>
+      </div>
+      <div class="main_right">
+        <div class="content">
+          <div class="intro" id="intro">
+            <iframe src="https://www.youtube.com/embed/Dz1CVpOkdH4?si=0Hil14Wyc43K0eAT" class="intro_video"></iframe>
+          </div>
+          <div class="action-btn">
+            <!-- <button class="live-btn">Live Demo</button> -->
+            <a target="_blank"
+              href="https://www.figma.com/file/leapmRwM0eKtWuPkvkfOUT/cleanTube?type=design&node-id=0%3A1&mode=design&t=EWeMjKlqDSjJhOf7-1"
+              class="git-btn"><i class="fa-brands fa-figma"></i>Figma</a>
+            <a target="_blank" href="https://github.com/devbynaim/cleanTube" class="git-btn"><i
+                class="fa-brands fa-github"></i>GitHub</a>
+            <!-- <a target="_blank" href="https://drive.google.com/file/d/1x0CT0jTbu6EVzuyiLDzt0eADGaHkILxB/view?usp=sharing"
+              class="git-btn"><i class="fa-solid fa-diagram-project"></i>App map</a> -->
+          </div>
+          <h5>Technology used </h5>
+          <hr>
+          <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>JavaScript</li>
+            <li>ReactJs</li>
+            <li>Redux</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container footer-container">
+      <div class="footer_left">
+        <a href="#"><img src="./public/images/logo_day.png" alt="logo" class="logo" /></a>
+        <img src="./public/images/weappept.png" alt="payment" class="weappept" />
+      </div>
+      <div class="footer_right">
+        <ul>
+          <p class="h3">Pages</p>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <ul>
+          <p class="h3">Service</p>
+          <li><a href="#">Shopify</a></li>
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">Mern stack</a></li>
+        </ul>
+        <ul>
+          <p class="h3">Contact</p>
+          <li><img src="./public/images/phone.svg" alt="" srcset=""><a href="#">(+880) 1743379491</a></li>
+          <li><img src="./public/images/email.svg" alt="" srcset=""><a href="#">naim.work.bd.com</a></li>
+          <li><img src="./public/images/location.svg" alt="" srcset=""><a href="#">Khilgaon,Shantipur Dhaka 1219 </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./project.js" type="module"></script>
+
+</html>

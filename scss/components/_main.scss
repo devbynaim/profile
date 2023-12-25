@@ -1,0 +1,52 @@
+@use "../utils" as u;
+
+main {
+    .main {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+
+        @include u.laptop-style {
+            gap: 70px;
+        }
+
+        @include u.tablet-style {
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        &_left {
+            box-shadow: var(--shadow);
+            @include u.about_me {
+            }
+        }
+
+        &_right {
+            width: 67%;
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+
+            @include u.tablet-style {
+                align-items: center;
+                width: 100%;
+            }
+
+            @include u.top_bar {
+            }
+
+            .top_container {
+                width: 100%;
+                @include u.skill_tab {
+                    margin-top: 25px;
+                }
+                @include u.projects_tab {
+                    margin-top: 25px;
+                }
+                @include u.contruct {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}

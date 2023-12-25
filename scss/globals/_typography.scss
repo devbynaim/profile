@@ -1,0 +1,112 @@
+@use "../utils/" as u;
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap");
+
+:root {
+    --primary-color: #222a42;
+    --primary-color-light: #181f33;
+    --secondary-color: #0d1322;
+    --secondary-color-light: #0d1322;
+    --contruct-bg-color: var(--secondary-color-light);
+    --accent-color: #0068a3;
+    --accent-color-light: #0068a380;
+    --selected-color: #ffffff;
+    --non-selected-color: #a9a9a9;
+    --text-color: #ffffff;
+    --activeTabBg-color: #ffffff;
+    --activeTabTxt-color: black;
+    --font-size: 16px;
+    --footer-link-color: var(--non-selected-color);
+    --shadow: 0px 0px 3px 1px #0d1322;
+    --shadow-project: 0px 0px 3px 1px #ffffff14;
+}
+
+button,
+a {
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        color: var(--selected-color);
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+
+    @include u.phone-style {
+        width: 92%;
+    }
+}
+
+.h3 {
+    font-size: 20px;
+}
+
+.h2 {
+    font-size: 27px;
+}
+
+.h4 {
+    font-size: 15px;
+}
+
+.h5 {
+    font-size: 11px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    display: block;
+}
+
+.tab_active {
+    background-color: var(--activeTabBg-color) !important;
+    color: var(--activeTabTxt-color) !important;
+    border: 2px solid var(--accent-color-light) !important;
+}
+
+.Skills_active {
+    display: flex !important;
+}
+
+.Projects_active {
+    display: grid !important;
+}
+
+.Contruct_active {
+    display: flex !important;
+}
+
+.active_page {
+    color: var(--selected-color) !important;
+}
+.active_filter {
+    color: var(--accent-color) !important;
+}
+
+.logo {
+    height: 45px;
+    width: 95px;
+
+    @include u.phone-style {
+        height: 35px;
+        width: 85px;
+    }
+}
+
+.test {
+    background-color: tomato !important;
+    height: 50vh !important;
+}

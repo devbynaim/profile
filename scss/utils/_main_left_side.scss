@@ -1,0 +1,51 @@
+@use "./breakpoints" as u;
+
+@mixin about_me {
+    .about_me {
+        display: flex;
+        padding: 15px;
+        flex-direction: column;
+        border-radius: 5px;
+        align-items: center;
+        background-color: var(--primary-color-light);
+        width: 310px;
+
+        @include u.tablet-style {
+            width: 100%;
+        }
+
+        img {
+            width: 142px; /* Note: There's a typo, width is repeated instead of height */
+            height: 141px; /* Corrected height value */
+        }
+
+        .head_line {
+            font-family: "Audiowide";
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .content {
+            margin: 15px;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: Verdana, Arial, sans-serif;
+        }
+
+        .hire_me {
+            background-color: var(--accent-color);
+            color: white;
+            width: 157px;
+            height: 38px;
+            font-size: 15px;
+        }
+    }
+
+    @content;
+}

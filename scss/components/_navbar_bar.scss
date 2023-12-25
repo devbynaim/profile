@@ -1,0 +1,89 @@
+@use "../utils/" as u;
+
+header {
+    @include u.tablet-style {
+        position: sticky;
+        top: 0;
+    }
+}
+
+.navbar {
+    box-shadow: var(--shadow);
+    background-color: var(--secondary-color);
+    width: 100%;
+    font-family: "Audiowide";
+    font-size: 15px;
+
+    @include u.tablet-style {
+        font-size: 14px;
+    }
+
+    a {
+        color: var(--non-selected-color);
+        &:hover {
+            color: var(--selected-color);
+        }
+    }
+
+    .logo_wrapper {
+        display: flex;
+        align-items: center;
+
+        .menu {
+            display: none;
+
+            @include u.tablet-style {
+                display: inline;
+
+                @include u.phone-style {
+                    width: 24px;
+                }
+            }
+        }
+
+        @include u.tablet-style {
+            gap: 1rem;
+        }
+    }
+
+    &_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_left {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            .close {
+                display: none;
+            }
+
+            @include u.tablet-style {
+                display: none;
+            }
+        }
+    }
+
+    &_right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        img {
+            width: 20px;
+            height: 20px;
+
+            @include u.tablet-style {
+                height: 18px;
+                width: 18px;
+            }
+        }
+    }
+}
