@@ -394,6 +394,12 @@ main #Projects_container .projects {
     grid-column-gap: 5%;
   }
 }
+@media screen and (max-width: 479px) {
+  main #Projects_container .projects {
+    grid-template-columns: repeat(1, 100%);
+    grid-column-gap: 5%;
+  }
+}
 main #Projects_container .projects li {
   display: flex;
   align-items: center;

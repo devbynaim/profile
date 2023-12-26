@@ -52,6 +52,11 @@ main {
                 grid-template-columns: repeat(2, 45%);
                 grid-column-gap: 5%;
             }
+            @include u.phone-style {
+                grid-template-columns: repeat(1, 100%);
+                grid-column-gap: 5%;
+            }
+            
             li {
                 display: flex;
                 align-items: center;
