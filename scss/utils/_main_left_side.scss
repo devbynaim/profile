@@ -9,6 +9,7 @@
         align-items: center;
         background-color: var(--primary-color-light);
         width: 310px;
+        height: 100%;
 
         @include u.tablet-style {
             width: 100%;

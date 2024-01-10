@@ -359,6 +359,7 @@ main .main_left .about_me {
   align-items: center;
   background-color: var(--primary-color-light);
   width: 310px;
+  height: 100%;
 }
 @media screen and (max-width: 799px) {
   main .main_left .about_me {
@@ -478,9 +479,10 @@ main .main_right .top_container .skill_tab .skills .Skills_container .tag_line p
   }
 }
 main .main_right .top_container .skill_tab .skills .Skills_container li {
-  background-color: var(--accent-color);
+  background-color: #0c1329;
+  box-shadow: 0px 0px 2px 1px rgba(0, 104, 163, 0.5882352941);
   color: white;
-  padding: 0 3px;
+  padding: 5px 10px;
   border-radius: 5px;
 }
 main .main_right .top_container .skill_tab .skills .Skills_container li .skills_label {
@@ -681,14 +683,13 @@ main .main_right .top_container .contruct_right_container input {
 }
 main .main_right .top_container .contruct_right_container textarea {
   resize: none;
+  padding: 10px;
   background-color: #e8f0fe;
   border: 1px solid rgba(15, 15, 15, 0.16);
 }
 main .main_right .top_container .contruct_right_container button {
   padding: 10px;
+  background-color: var(--accent-color);
+  color: white;
   border-radius: 0;
-}
-main .main_right .top_container .contruct_right_container button:hover {
-  background-color: var(--accent-color-light);
-  color: var(--text-color);
 }/*# sourceMappingURL=index.css.map */
